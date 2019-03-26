@@ -1,46 +1,68 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <title>Assignment Solution for Module 2</title>
-    </head>
-    <body>
-        <header>
-            <h1>Our Menu</h1>
-        </header>
-        <div class="row">
-            <div class="menuContainer col-lg-4 col-md-6 col-sm-12">
-                <div class="menuItem">
-                    <div class="chickenTitle title">
-                        Chicken
-                    </div>
-                    <p class="menuItemDescription">
-                        Lorem ipsum dolor sit amet, nam cu omittam consulatu, te meis ludus saperet pri. Duo ad modus consulatu deterruisset, no his homero mollis quaestio, at usu vitae torquatos. Id quo dicant impetus, eum an epicurei urbanitas, quando iuvaret sadipscing in eum. Ex nullam aeterno accusam pri, nam id amet perpetua reprehendunt. Est congue graece ne. Diam instructior in nec, ne iudico probatus eum.
-                    </p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>David Chu's China Bistro</title>
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-expand-lg navbar-expand-md navbar-light" >
+            <div class="container">
+                <div class="navbar-header d-none d-md-block d-xl-block">
+                    <a href="index.html">
+                        <div id="logo-img" class="" alt="Logo image"></div>
+                    </a>
+                </div>
+                <div class="navbar-brand">
+                    <a href="index.html"><h1>Hong Kong Bistro</h1></a>
+                </div>
+
+                <button type="button" class="navbar-toggler collapsed navbar-custom"
+                        data-toggle="collapse" data-target="#collapsable-nav"
+                        aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="collapsable-nav">
+                    <ul id="nav-list" class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-categories.html">
+                                <span class="sr-only">(current)</span>
+                                <span class="fa fa-cutlery"></span>
+                                <br class="d-none d-md-block d-xl-block">Menu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu-categories.html">
+                                <span class="sr-only">(current)</span>
+                                <span class="fa fa-info-circle"></span>
+                                <br class="d-none d-md-block d-xl-block">About
+                            </a>
+                        </li>
+                        <li id="phone" class="nav-item d-none d-md-block d-xl-block">
+                            <a class="nav-link" href="tel:555-666-7777">
+                                410-602-5008
+                            </a>
+                            
+                            
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="menuContainer col-lg-4 col-md-6 col-sm-12">
-                <div class="menuItem">
-                    <span class="beefTitle title">
-                        Beef
-                    </span>
-                    <p class="menuItemDescription">
-                        Lorem ipsum dolor sit amet, nam cu omittam consulatu, te meis ludus saperet pri. Duo ad modus consulatu deterruisset, no his homero mollis quaestio, at usu vitae torquatos. Id quo dicant impetus, eum an epicurei urbanitas, quando iuvaret sadipscing in eum. Ex nullam aeterno accusam pri, nam id amet perpetua reprehendunt. Est congue graece ne. Diam instructior in nec, ne iudico probatus eum.
-                    </p>
-                </div>
-            </div>
-            <div class="menuContainer col-lg-4 col-md-12 col-sm-12">
-                <div class="menuItem">
-                    <span class="sushiTitle title">
-                        Sushi
-                    </span>
-                    <p class="menuItemDescription">
-                        Lorem ipsum dolor sit amet, nam cu omittam consulatu, te meis ludus saperet pri. Duo ad modus consulatu deterruisset, no his homero mollis quaestio, at usu vitae torquatos. Id quo dicant impetus, eum an epicurei urbanitas, quando iuvaret sadipscing in eum. Ex nullam aeterno accusam pri, nam id amet perpetua reprehendunt. Est congue graece ne. Diam instructior in nec, ne iudico probatus eum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </body>
+
+        </nav>
+    </header>
+
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
 </html>
