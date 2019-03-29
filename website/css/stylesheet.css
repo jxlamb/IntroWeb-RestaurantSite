@@ -1,3 +1,12 @@
+
+/*
+    colors
+    green font: 557c3e
+    yellow header: f6b319
+    background and menu items: 61122f
+    footer grey background: 363636
+
+*/
 *{
     box-sizing: border-box;
 }
@@ -68,6 +77,16 @@ li span{
 .fa {
     font-size: 2em;
 }
+#call-btn a {
+    color: white;
+    margin-top: 5px;
+}
+#xs-deliver{
+    font-size: .6em;
+}
+#call-btn a:hover {
+    color: white;
+}
 @media (min-width: 768px) {
     li .fa {
         width: 100%;
@@ -87,5 +106,9 @@ li span{
 @media (max-width: 767px) {
     .navbar-brand h1{
         font-size: 5vw;
+    }
+    .fa{
+        font-size: 1.5em;
+        margin-right: 10px;
     }
 }
