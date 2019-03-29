@@ -1,15 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 body {
     font-size: 16px;
     color: #fff;
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
-}
-@media (min-width: 768px) {
-    li .fa {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
 }
 #header-nav {
     background-color: #f6b319;
@@ -36,19 +32,20 @@ body {
     margin-bottom: 0;
     line-height: .75;
 }
-#nav-list {
-    font-size: 1.3em;
-}
 #nav-list a {
     color: #951c49;
 }
 #nav-list a:hover{
     background: #e7e7e7;
 }
-#phone{
-    margin-top: 10px;
+#phone a {
     display: inline-block;
     text-align: right;
+    font-size: 1.5em;
+}
+#phone small {
+    color: #557c3e;
+    font-size: .5em;
 }
 .navbar-brand a:hover, .navbar-brand a:focus{
     text-decoration: none;
@@ -58,15 +55,37 @@ body {
     color: #557c3e;
     text-transform: uppercase;
     font-size: .7em;
-    margin-top: 15px;
 }
 li span{
     font-size: .5em;
-    margin-top: -20px;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid #61122f
 }
 .navbar-header button.navbar-toggle{
     clear: both;
+}
+.fa {
+    font-size: 2em;
+}
+@media (min-width: 768px) {
+    li .fa {
+        width: 100%;
+        display: inline-block;
+        text-align: center;        
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    #logo-img {
+        background: url(../images/restaurant-logo_medium.png);
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand h1{
+        font-size: 5vw;
+    }
 }
