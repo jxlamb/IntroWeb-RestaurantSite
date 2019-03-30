@@ -141,6 +141,40 @@ li span{
     opacity: .8;
     font-family: 'Lora', serif;
 }
+
+.page-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.page-footer div.row{
+    margin-bottom: 35px;
+}
+.page-footer hr {
+    color: #fff;
+    background-color: #fff;
+    border-color: #fff;
+}
+#hours, #address{
+    line-height: 2;
+}
+#hours > span, #address > span{
+    font-size: 1.3em;
+}
+#address p{
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+#testimonials{
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+}
+
 /*extra small*/
 @media (max-width: 767px) {
     .navbar-brand h1{
@@ -154,7 +188,22 @@ li span{
         margin-top: 30px;
         padding: 0px;
     }
+    .page-footer section{
+        text-align: center;
+    }
+    .page-footer section hr{
+        width: 75%;
+    }
 }
+
+/*extra small*/
+@media (max-width: 600px) {
+    .navbar-brand h1 {
+        font-size: 6vw;
+    }
+
+}
+
 /*small*/
 @media (min-width: 768px) and (max-width: 991px) {
     .container .jumbotron {
