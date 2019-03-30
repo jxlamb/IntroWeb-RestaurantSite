@@ -16,19 +16,22 @@ body {
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
 }
+.fa {
+    font-size: 2em;
+}
 #header-nav {
     background-color: #f6b319;
     border-radius: 0;
     border: 0;
 }
-#logo-img {
-    background: url('../images/restaurant-logo_large.png');
-    width: 150px;
-    height: 150px;
-    margin: 10px 15px 10px 0;
+.navbar-light .navbar-toggler {
+    color: #951c49;
+    border-width: 2px;
+    border-color: #951c49;
 }
-.navbar-expand {
-    padding-top: 25px;
+.navbar-light .navbar-toggler a:hover {
+    color: #951c49;
+    border-color: #951c49;
 }
 .navbar-brand h1 {
     font-family: 'Lora', serif;
@@ -41,76 +44,103 @@ body {
     margin-bottom: 0;
     line-height: .75;
 }
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p {
+    margin-top: 5px;
+    color: #557c3e;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+#logo-img {
+    background: url('../images/restaurant-logo_large.png');
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+.navbar-expand {
+    padding-top: 25px;
+}
 #nav-list a {
     color: #951c49;
 }
 #nav-list a:hover{
     background: #e7e7e7;
 }
+
+li span{
+    font-size: .5em;
+}
+
 #phone a {
     display: inline-block;
     text-align: right;
     font-size: 1.5em;
 }
-#phone small {
-    color: #557c3e;
-    font-size: .5em;
-}
-.navbar-brand a:hover, .navbar-brand a:focus{
-    text-decoration: none;
-}
-.navbar-brand p{
-    margin-top: 5px;
-    color: #557c3e;
-    text-transform: uppercase;
-    font-size: .7em;
-}
-li span{
-    font-size: .5em;
-}
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-    border: 1px solid #61122f
-}
-.navbar-header button.navbar-toggle{
-    clear: both;
-}
-.fa {
-    font-size: 2em;
-}
-#call-btn a {
-    color: white;
-    margin-top: 5px;
-}
-#xs-deliver{
-    font-size: .6em;
-    margin: 5px;
-}
-#call-btn a:hover {
-    color: white;
-}
-.img-responsive {
-    width: 100%;
-    height: 100%;
-}
 
-.container .jumbotron {
-    box-shadow: 0 0 50px #3f0c1f;
-    border: 2px solid #3f0c14;
-}
 #call-btn {
     border: 2px solid;
     border-color: #fff;
     background-color: #f6b319;
     margin: 15px;
     border-radius: 5px;
-    font-size: 2em;
     color: #951c49;
 }
 #call-btn a {
-    font-size: .7em;
+    font-size: 1.25em;
     color: #951c49;
 }
+#call-btn a:hover {
+    color: white;
+}
+#xs-deliver {
+    font-size: .6em;
+    margin: -10px 5px 5px 5px;
+}
 
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+.container .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c14;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+    background: url('../images/Beef Bowl.jpg') no-repeat center center;
+    background-size: cover;
+}
+#specials-tile {
+    background: url('../images/noodle.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    opacity: .8;
+    font-family: 'Lora', serif;
+}
 /*extra small*/
 @media (max-width: 767px) {
     .navbar-brand h1{
@@ -124,15 +154,6 @@ li span{
         margin-top: 30px;
         padding: 0px;
     }
-}
-.navbar-light .navbar-toggler {
-    color: #951c49;
-    border-width: 2px;
-    border-color: #951c49;
-}
-.navbar-light .navbar-toggler a:hover {
-    color: #951c49;
-    border-color: #951c49;
 }
 /*small*/
 @media (min-width: 768px) and (max-width: 991px) {
