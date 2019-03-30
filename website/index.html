@@ -30,7 +30,9 @@
                 <button class="pull-right navbar-toggler collapsed navbar-custom"
                         data-toggle="collapse" data-target="#collapsable-nav"
                         aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon"></i>
+                    </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="collapsable-nav">
@@ -60,8 +62,7 @@
                             <div id="phone" class="d-none d-md-block d-xl-block">
                                 <a class="nav-link" href="tel:555-666-7777">
                                     555-666-7777
-                                </a>
-                                
+                                </a>                                
                             </div>
                         </li>
                     </ul>
@@ -69,21 +70,25 @@
             </div>
         </nav>
     </header>
-    <div id="call-btn" class="text-center d-xs-block d-sm-block d-md-none">
-        <a class="btn" href="tel:555-666-7777">
-            <span class="fa fa-phone"></span>
-            555-666-7777
-        </a>
-    </div>
-    <div id="xs-deliver" class="text-center d-xs-block d-sm-block d-md-none">* We Deliver
-    </div>
+    <div class="container phone">
+        <div id="call-btn" class="text-center d-xs-block d-sm-block d-md-none">
+            <a class="btn" href="tel:555-666-7777">
+                <span class="fa fa-phone"></span>
+                <span>555-666-7777</span>
+            </a>
+        </div>
+        <div id="xs-deliver" class="text-center d-xs-block d-sm-block d-md-none">
+            * We Deliver
+        </div>
 
-    <div id="main-content" class="container">
-        <div class="jumbotron">
-            <img src="images/restaurant-xs.jpg" alt="Restaurant Picture"
-                 class="img-responsive d-xs-block d-sm-block d-md-none"/>
+        <div id="main-content" class="container">
+            <div class="jumbotron">
+                <img src="images/restaurant-xs.jpg" alt="Restaurant Picture"
+                     class="img-responsive d-xs-block d-sm-block d-md-none" />
+            </div>
         </div>
     </div>
+
 
     <script src="scripts/jquery-3.3.1.js"></script>
     <script src="scripts/bootstrap.min.js"></script>

@@ -83,7 +83,7 @@ li span{
 }
 #xs-deliver{
     font-size: .6em;
-    margin-bottom: 10px;
+    margin: 5px;
 }
 #call-btn a:hover {
     color: white;
@@ -93,9 +93,22 @@ li span{
     height: 100%;
 }
 
-.jumbotron {
+.container .jumbotron {
     box-shadow: 0 0 50px #3f0c1f;
     border: 2px solid #3f0c14;
+}
+#call-btn {
+    border: 2px solid;
+    border-color: #fff;
+    background-color: #f6b319;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 2em;
+    color: #951c49;
+}
+#call-btn a {
+    font-size: .7em;
+    color: #951c49;
 }
 
 /*extra small*/
@@ -112,10 +125,18 @@ li span{
         padding: 0px;
     }
 }
-
+.navbar-light .navbar-toggler {
+    color: #951c49;
+    border-width: 2px;
+    border-color: #951c49;
+}
+.navbar-light .navbar-toggler a:hover {
+    color: #951c49;
+    border-color: #951c49;
+}
 /*small*/
 @media (min-width: 768px) and (max-width: 991px) {
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-sm.jpg') no-repeat;
         height: 470px;
         margin: 5px 5px 5px 0;
@@ -124,7 +145,7 @@ li span{
 
 /*large*/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-lg.jpg') no-repeat;
         height: 600px;
         margin: 5px 5px 5px 0;
@@ -133,7 +154,7 @@ li span{
 
 /*extra large*/
 @media (min-width: 1200px){
-    .jumbotron {
+    .container .jumbotron {
         background: url('../images/restaurant-xlg.jpg') no-repeat;
         width: 100%;
         height: 100%;
