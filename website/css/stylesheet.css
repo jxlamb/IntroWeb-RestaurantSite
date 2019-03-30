@@ -116,7 +116,7 @@ li span{
 /*small*/
 @media (min-width: 768px) and (max-width: 991px) {
     .jumbotron {
-        background: url('../images/restaurant-medium.jpg') no-repeat;
+        background: url('../images/restaurant-sm.jpg') no-repeat;
         height: 470px;
         margin: 5px 5px 5px 0;
     }
@@ -125,7 +125,7 @@ li span{
 /*large*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .jumbotron {
-        background: url('../images/restaurant-large.jpg') no-repeat;
+        background: url('../images/restaurant-lg.jpg') no-repeat;
         height: 600px;
         margin: 5px 5px 5px 0;
     }
@@ -134,7 +134,7 @@ li span{
 /*extra large*/
 @media (min-width: 1200px){
     .jumbotron {
-        background: url('../images/restaurant-large2.jpg') no-repeat;
+        background: url('../images/restaurant-xlg.jpg') no-repeat;
         width: 100%;
         height: 100%;
         height: 675px;
