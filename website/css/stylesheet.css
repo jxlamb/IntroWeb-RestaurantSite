@@ -142,6 +142,34 @@ li span{
     font-family: 'Lora', serif;
 }
 
+.category-tile{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div{
+    margin-bottom: 50px;
+}
+
 .page-footer{
     margin-top: 30px;
     padding-top: 35px;
@@ -175,7 +203,28 @@ li span{
     margin-top: 25px;
 }
 
+/*super extra small*/
+@media(max-width: 479px){
+    .col-xxs-12{
+        width: 100%;
+        float:left;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 /*extra small*/
+@media(min-width: 480px) and (max-width: 766px) {
+    .col-xs-6 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/*small*/
 @media (max-width: 767px) {
     .navbar-brand h1{
         font-size: 5vw;
@@ -196,15 +245,7 @@ li span{
     }
 }
 
-/*extra small*/
-@media (max-width: 600px) {
-    .navbar-brand h1 {
-        font-size: 6vw;
-    }
-
-}
-
-/*small*/
+/*medium*/
 @media (min-width: 768px) and (max-width: 991px) {
     .container .jumbotron {
         background: url('../images/restaurant-sm.jpg') no-repeat;
