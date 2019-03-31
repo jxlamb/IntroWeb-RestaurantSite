@@ -65,7 +65,7 @@ body {
 #nav-list a {
     color: #951c49;
 }
-#nav-list a:hover{
+#nav-list a:hover, #nav-list .active {
     background: #e7e7e7;
 }
 
@@ -180,7 +180,7 @@ li span{
 .page-footer div.row{
     margin-bottom: 35px;
 }
-.page-footer hr {
+.page-footer hr, .menu-item-title hr {
     color: #fff;
     background-color: #fff;
     border-color: #fff;
