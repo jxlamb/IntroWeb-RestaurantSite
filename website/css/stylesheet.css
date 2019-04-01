@@ -12,38 +12,36 @@
 }
 body {
     font-size: 16px;
-    color: #fff;
-    background: url('../images/v2/background6.jpeg') center center scroll;
+    color: #efefef;
+    background-color: #7a0000;
     font-family: 'Oxygen', sans-serif;
 }
 .fa {
     font-size: 2em;
 }
 #header-nav {
-    background: url('../images/v2/banner 6.jpg') center center no-repeat;
+    background: #1e1e1e;
     width: 100%;
     border-radius: 0;
     border: 0;
     min-height: 100px;
 }
 .navbar-light .navbar-toggler {
-    color: #c11212;
+    color: #efefef;
     border-width: 2px;
-    border-color: #c11212;
+    border-color: #efefef;
 }
 .navbar-light .navbar-toggler a:hover {
-    color: #c11212;
-    border-color: #c11212;
+    color: #efefef;
+    border-color: #efefef;
 }
 .navbar-brand h1 {
     font-family: 'Lora', serif;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #750000;
-    color: #c11212;
+    color: #efefef;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px #4a4a4a;
     margin-top: 0;
     margin-bottom: 0;
     line-height: .75;
@@ -67,10 +65,11 @@ body {
     padding-top: 25px;
 }
 #nav-list a {
-    color: #c11212;
+    color: #efefef;
 }
 #nav-list a:hover, #nav-list .active {
-    background: #e7e7e7;
+    background: #efefef;
+    color: #1e1e1e;
 }
 
 li span{
@@ -85,15 +84,15 @@ li span{
 
 #call-btn {
     border: 2px solid;
-    border-color: #fff;
-    background-color: #f6b319;
+    border-color: #efefef;
+    background-color: #222;
     margin: 15px;
     border-radius: 5px;
-    color: #c11212;
+    color: #efefef;
 }
 #call-btn a {
     font-size: 1.25em;
-    color: #c11212;
+    color: #efefef;
 }
 #call-btn a:hover {
     color: white;
@@ -108,8 +107,9 @@ li span{
     height: 100%;
 }
 .container .jumbotron {
-    box-shadow: 0 0 50px #3f0c1f;
-    border: 2px solid #3f0c14;
+    box-shadow: 0 0 50px #1b1b1b;
+    border: 2px solid #1b1b1b;
+    background-color: #1f1f1f;
 }
 
 #menu-tile, #specials-tile, #map-tile {
@@ -117,7 +117,8 @@ li span{
     width: 100%;
     margin-bottom: 15px;
     position: relative;
-    border: 2px solid #3f0c1f;
+    box-shadow: 0 0 50px #1b1b1b;
+    border: 2px solid #1b1b1b;
     overflow: hidden;
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
@@ -146,15 +147,16 @@ li span{
     font-family: 'Lora', serif;
 }
 
-.category-tile{
+.category-tile {
     position: relative;
-    border: 2px solid #3f0c1f;
+    box-shadow: 0 0 50px #1b1b1b;
+    border: 2px solid #1b1b1b;
     overflow: hidden;
     width: 200px;
     height: 200px;
     margin: 0 auto 15px;
 }
-.category-tile span{
+.category-tile span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -162,32 +164,32 @@ li span{
     font-size: 1.2em;
     text-transform: uppercase;
     background-color: #000;
-    color: #fff;
+    color: #efefef;
     opacity: .8;
 }
 
-.category-tile:hover{
-    box-shadow: 0 1px 5px 1px #cccccc;
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #efefef;
 }
 
 #menu-categories-title + div{
     margin-bottom: 50px;
 }
 
-.page-footer{
+.page-footer {
     margin-top: 30px;
     padding-top: 35px;
     padding-bottom: 30px;
-    background-color: #222;
+    background-color: #1e1e1e;
     border-top: 0;
 }
 .page-footer div.row{
     margin-bottom: 35px;
 }
 hr {
-    color: #fff;
-    background-color: #fff;
-    border-color: #fff;
+    color: #efefef;
+    background-color: #efefef;
+    border-color: #efefef;
     width: 80%;
 }
 #hours, #address{
@@ -196,8 +198,8 @@ hr {
 #hours > span, #address > span{
     font-size: 1.3em;
 }
-#address p{
-    color: #557c3e;
+#address p {
+    color: #efefef;
     font-size: .8em;
     line-height: 1.8;
 }
@@ -219,7 +221,8 @@ hr {
 }
 .menu-item-photo {
     position: relative;
-    border: 2px solid #3f0c1f;
+    box-shadow: 0 0 50px #1b1b1b;
+    border: 2px solid #1b1b1b;
     overflow: hidden;
     padding: 0;
     margin-right: -15px;
@@ -232,7 +235,8 @@ hr {
     bottom: 0;
     right: 0;
     width: 80px;
-    background-color: #557c3e;
+    background-color: #000;
+    opacity: .8;
     text-align: center;
     padding-right: 5px;
 }
@@ -282,6 +286,13 @@ h3.menu-item-title {
     }
     .page-footer section{
         text-align: center;
+    }
+    #nav-list .nav-item .fa{
+        margin-left: 15px;
+    }
+    #nav-list {
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 }
 
